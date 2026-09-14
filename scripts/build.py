@@ -7,6 +7,7 @@ import csv
 import html
 import io
 import json
+import os
 import re
 import sqlite3
 import subprocess
@@ -16,7 +17,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PRIVATE = Path("/Users/liwen/Desktop/zz/wechat-research-corpus")
+PRIVATE = Path(os.environ.get("PRIVATE_CORPUS_PATH", ROOT.parent / "wechat-research-corpus"))
 SOURCE_REPOSITORY = "chuanchenge-ship-it/wechat-research-corpus"
 PUBLIC_FIELDS = (
     "article_id",

@@ -43,6 +43,14 @@ print(df.groupby("research_stream").size())
 
 - `content_status` 描述私有证据库中的恢复状态，不代表公开库提供全文。
 - `quality_status` 与 `quality_flags` 用于揭示重复、缺图或来源验证问题。
+
+## 本地重建
+
+生成器只读取私有语料库已经提交的 `HEAD`，不会把未提交的工作区改动带入公开数据。默认读取同级目录 `wechat-research-corpus`，也可以显式指定：
+
+```bash
+PRIVATE_CORPUS_PATH=/path/to/wechat-research-corpus python3 scripts/build.py
+```
 - `source_url` 指向公开来源；目标网页可能移动、失效或调整访问条件。
 - 公开库不包含 `discovered_url`，避免发布临时搜索令牌和追踪参数。
 
