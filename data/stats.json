@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-09-14T18:28:25+00:00",
+  "source_repository": "chuanchenge-ship-it/wechat-research-corpus",
+  "source_commit": "6019f8abc3ef0e2acb8a672415acc7494819a28a",
+  "article_count": 3193,
+  "figure_count": 39426,
+  "date_min": "2016-09-25",
+  "date_max": "2026-09-09",
+  "unknown_date_count": 3,
+  "by_research_stream": {
+    "一瑜中的": 62,
+    "中金点睛": 1670,
+    "华泰宏观": 962,
+    "国君宏观研究": 20,
+    "宏观fans哲": 56,
+    "李超宏观研究与资产配置": 24,
+    "申万宏源宏观": 88,
+    "郭磊宏观茶座": 229,
+    "钟正生经济分析": 18,
+    "雪涛宏观笔记": 64
+  },
+  "by_content_status": {
+    "abstract_only": 57,
+    "derived_text": 23,
+    "full_mirror": 3109,
+    "index_only": 4
+  },
+  "by_year": {
+    "2016": 7,
+    "2017": 19,
+    "2018": 80,
+    "2019": 349,
+    "2020": 405,
+    "2021": 476,
+    "2022": 392,
+    "2023": 480,
+    "2024": 420,
+    "2025": 399,
+    "2026": 163
+  },
+  "license": "ODC-By-1.0 (database metadata only)"
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://chuanchenge-ship-it.github.io/wechat-research-corpus-public/schema/article.schema.json",
+  "title": "Public WeChat Research Article Metadata",
+  "type": "object",
+  "required": ["article_id", "research_stream_id", "title", "published_date", "source_url", "content_status", "quality_status"],
+  "properties": {
+    "article_id": {"type": "string"},
+    "research_stream_id": {"type": "string"},
+    "research_stream": {"type": "string"},
+    "publisher_account": {"type": ["string", "null"]},
+    "publisher_relation": {"type": ["string", "null"]},
+    "title": {"type": "string"},
+    "published_date": {"type": ["string", "null"], "format": "date"},
+    "source_url": {"type": "string", "format": "uri"},
+    "content_status": {"enum": ["full_original", "full_mirror", "derived_text", "abstract_only", "index_only", "not_recovered"]},
+    "quality_status": {"type": "string"},
+    "identity_status": {"type": ["string", "null"]},
+    "figure_count": {"type": "integer", "minimum": 0},
+    "normalized_characters": {"type": ["integer", "null"], "minimum": 0},
+    "quality_flags": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": false
+}
